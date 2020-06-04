@@ -1,6 +1,6 @@
 # WebAuthenticatorRepro
 
-On Android, when `Xamarin.Essentials.WebAuthenticator.AuthenticateAsync` returns from a successful authentication, it always throws `WebAuthenticator.AuthenticateAsync`:
+On Android, when `Xamarin.Essentials.WebAuthenticator.AuthenticateAsync` returns from a successful authentication, it always throws `System.Threading.Tasks.TaskCanceledException`:
 
 **Note:** This `Exception` does not happen on iOS
 
