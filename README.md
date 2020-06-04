@@ -1,6 +1,7 @@
 # WebAuthenticatorRepro
 
 On Android, when `Xamarin.Essentials.WebAuthenticator.AuthenticateAsync` returns from a successful authentication, it always throws `WebAuthenticator.AuthenticateAsync`:
+
 **Note:** This `Exception` does not happen on iOS
 
 ```bash
