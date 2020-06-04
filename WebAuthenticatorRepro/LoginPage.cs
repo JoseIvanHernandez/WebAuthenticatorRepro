@@ -27,6 +27,7 @@ namespace WebAuthenticatorRepro
         async void HandleLoginButtonClicked(object sender, EventArgs e)
         {
             var button = (Button)sender;
+
             button.IsEnabled = false;
             _activityIndicator.IsVisible = _activityIndicator.IsRunning = true;
 
@@ -40,10 +41,6 @@ namespace WebAuthenticatorRepro
                     _resultLabel.Text = "Unable to Connect";
                 else
                     _resultLabel.Text = "Success!";
-            }
-            catch(Exception ex)
-            {
-                _resultLabel.Text = $"Unable to Connect: {ex.Message}";
             }
             finally
             {
